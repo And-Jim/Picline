@@ -1,0 +1,16 @@
+extends ../../layout.jade
+block contenido
+    div(class="col-md-6 remove-float center-block big-top-space")
+        h1 Subir nueva foto
+        form(action='/app/imagenes',method='POST' enctype="multipart/form-data")
+            div(class='form-group')
+                label(for='title') Titulo
+                input(type='text', name='title',placeholder='Titulo de la foto...',required='yes', class='form-control' id="title")
+
+            div(class='form-group')
+                label(for='archivo') Archivo:
+                input(type='file', name='archivo', class='form-control' id="archivo")
+
+            div(class="row top-space")
+                div(class="col-xs-12 col-sm-6 ")
+                    input(type='submit', value='Subir', class='btn btn-primary')

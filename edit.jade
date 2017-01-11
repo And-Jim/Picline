@@ -1,0 +1,13 @@
+extends ../../layout.jade
+block contenido
+    div(class="col-md-6 remove-float center-block big-top-space")
+        h1 Editar
+        form(action='/app/imagenes/#{imagen._id}?_method=PUT',method='POST' enctype="multipart/form-data")
+            input(type="hidden" value="PUT" name="_method")
+            div(class='form-group')
+                label(for='title') Titulo
+                input(type='text', name='title',placeholder='Titulo de la foto...',required='yes', class='form-control' id="title" value="#{imagen.title}")
+
+            div(class="row top-space")
+                div(class="col-xs-12 col-sm-6 ")
+                    input(type='submit', value='Guardar', class='btn btn-primary')

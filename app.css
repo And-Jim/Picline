@@ -1,0 +1,96 @@
+.right-space{
+    margin-right:1em;
+}
+
+.remove-float{
+    float: none;
+}
+
+.big-top-space{
+    margin-top: 200px;
+}
+
+.top-space{
+    margin-top: 1.5em;
+}
+
+.large-padding{
+    padding: 10px 15px;
+}
+
+.black{
+    background-color:#222;
+}
+
+.white-text{
+    color:white;
+}
+
+nav{
+    text-align: right;
+}
+
+nav  li {
+    display: inline-block;
+    margin-right: 1.2em;
+}
+
+nav li a{
+    color: white;
+    font-size: 1.3em;
+}
+
+nav li a:hover{
+    color: white;
+}
+
+.white{
+    background-color: white;
+}
+
+.border{
+    border: solid 1px #eee;
+}
+
+.tr:nth-last-of-type(odd){
+    background-color: #eee;
+}
+
+.right-space{
+    margin-right: 0.5em;
+}
+
+form.link{
+    display: inline-block;
+}
+
+form.link input[type="submit"]{
+    background-color: transparent;
+    border: none;
+    color: red;
+}
+
+form.link input[type="submit"]:hover{
+    text-decoration: underline;
+}
+
+div .img-link:link {text-decoration: none;
+ color: black;}
+
+ div .img-link:visited{text-decoration: none; color: black;}
+
+div .img-link:hover{text-decoration: underline; color: black;}
+
+ .imgbox
+{
+    width: 40%;
+    height: 40%;
+    display: block;
+
+
+}
+body{width: 100%;
+height: auto;}
+.img-box img{
+    width: 100%;
+}

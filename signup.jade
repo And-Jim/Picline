@@ -1,0 +1,25 @@
+extends ./layout.jade
+block contenido
+    div(class="col-md-6 remove-float center-block big-top-space")
+        form(action='/users',method='POST' enctype="multipart/form-data")
+            div(class='form-group')
+                label(for='email') Email:
+                input(type='text', name='email',placeholder='Example@email.com',required='yes', class='form-control')
+
+            div(class='form-group')
+                label(for='password') Contraseña:
+                input(type='Password', name='password',placeholder='************',required='yes' class='form-control')
+
+            div(class='form-group')
+                label(for='password_confirm') Confirma tu contraseña:
+                input(type='Password', name='pass_confirm',placeholder='************',required='yes' class='form-control')
+
+            div(class='form-group')
+                label(for='username') Username:
+                input(type='text', name='username',placeholder='Username',required='yes', class='form-control')
+
+            div(class="row top-space")
+                div(class="col-xs-12 col-sm-6 ")
+                    input(type='submit', value='Iniciar Sesion', class='btn btn-primary')
+                div(class="col-xs-12 col-sm-6 text-right")
+                    a(href="/login") Ya tengo cuenta

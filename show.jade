@@ -1,0 +1,6 @@
+extends ../../layout.jade
+block contenido
+    h1= imagen.title
+        img(class="imgbox" src="../../../public/imagenes/#{imagen._id}.#{imagen.extension}")
+    if (typeof imagen.creator != "undefined")
+        p Por #{imagen.creator.email}

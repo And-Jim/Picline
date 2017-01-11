@@ -1,0 +1,21 @@
+{
+  "name": "Proyecto",
+  "version": "1.0.0",
+  "description": "uso de exress para una app de subir fotos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-session": "^2.0.0-alpha.2",
+    "express": "^4.14.0",
+    "express-formidable": "^1.0.0",
+    "express-session": "^1.14.2",
+    "jade": "^1.11.0",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.7.1"
+  }
+}

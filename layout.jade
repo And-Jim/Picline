@@ -1,0 +1,18 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, user-scalable=no,initial-scale=1.0')
+        title Picline
+        link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',rel="stylesheet")
+        link(href="/public/css/app.css" rel="stylesheet")
+    body
+        nav(class="large-padding black white-text")
+            ul
+                li
+                    a(href="/app") Inicio
+                li
+                    a(href="/app/imagenes") Mis imagenes
+                li
+                    a(href="/app/imagenes/new") Subir
+        block contenido
